@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina Responsiva </title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="shortcut icon" href="Imagens/icons8-dev-50.png" type="image/x-icon">
+    
+</head>
+ 
+    <header class="header">
+        <img class="header_logo" src="Imagens/icons8-dev-50.png" alt="logo">
+        <span id="hamburguer" class="material-symbols-rounded">
+            MENU
+        </span>
+        <nav id="itens_menu" class="header_nav">
+            <ul>
+                <li><a href="#">Item 01</a></li>
+                <li><a href="#">Item 02</a></li>
+                <li><a href="#">Item 03</a></li>
+                <li><a href="#">Item 04</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fundo_main">
+
+    </main>
+
+
+    <footer>
+            
+    <section id="contato"> 
+        <h2> Contatos</h2>
+        <div class="logos_footer">
+            <div>
+                <a href=mailto:emailteste@hotmail.com target="_blank">
+                    <img src="imagens/email.png" alt="email" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=5599999999" target="_blank">
+                    <img src="imagens/whatsapp.png" alt="Whatsapp" class="tamanho">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/rafaellycta/" target="_blank">
+                    <img src="imagens/instagram.png" alt="Instagram" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/rafaelly-trindade" target="_blank">
+                    <img src="imagens/linkedin.png" alt="Linkedin" class="tamanho">
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/rafaellytrindade/" target="_blank">
+                    <img src="imagens/github.png" alt="Git Hub" class="tamanho">
+                </a>
+            </div>
+        </div>
+        <p> Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> &copy; Rafaelly Trindade </p>
+    </section>
+        
+    </footer>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itensMenu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer() {
+            if (itens_menu.style.display == 'block') {
+                itensMenu.classList.remove('show');
+            } else {
+                itensMenu.classList.toggle('show');
+            }
+        }
+    </script>
+</body>
+</html>
